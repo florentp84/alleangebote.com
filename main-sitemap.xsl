@@ -11,10 +11,10 @@
 			<head>
 				<xsl:choose>
 					<xsl:when test="kml:kml">
-						<title>Emplacements - Plan de site - WordPress OCOPO™ &#8211; 1.5</title>
+						<title>Standorte-Sitemap - Alle Nachrichten, auf Deutsch</title>
 					</xsl:when>
 					<xsl:otherwise>
-						<title>Sitemap XML - WordPress OCOPO™ &#8211; 1.5</title>
+						<title>XML-Sitemap - Alle Nachrichten, auf Deutsch</title>
 					</xsl:otherwise>
 				</xsl:choose>
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -103,13 +103,13 @@
 
 						<div id="description">
 
-							<h1>Fichier KML</h1>
+							<h1>KML-Datei</h1>
 
 															<p>
-									Ce fichier KML est généré par <a href="https://rankmath.com/" target="_blank">l’extension SEO Rank Math pour WordPress</a>. Il est utilisé pour fournir des informations de localisation à Google.								</p>
+									Dieses KML File wird generiert von <a href="https://rankmath.com/" target="_blank">Rank Math WordPress SEO Plugin</a>. Es wird verwendet, um Google Standortinformationen zur Verfügung zu stellen.								</p>
 							
 							<p>
-								En savoir plus sur le <a href="https://developers.google.com/kml/documentation/" target="_blank">fichier KML</a>.							</p>
+								Erfahre mehr über <a href="https://developers.google.com/kml/documentation/" target="_blank">KML-Datei</a>.							</p>
 
 						</div>
 
@@ -118,15 +118,15 @@
 								This KML file contains <xsl:value-of select="count(kml:kml/kml:Document/kml:Folder/kml:Placemark)"/> Locations.
 							</p>
 							<p class="expl">
-								<a href="/sitemap_index.xml">&#8592; Index du plan de site</a>							</p>
+								<a href="/sitemap_index.xml">&#8592; Sitemap Index</a>							</p>
 							<table id="sitemap" cellpadding="3">
 								<thead>
 									<tr>
-										<th width="25%">Nom</th>
-										<th width="40%">Adresse</th>
-										<th width="15%">Numéro de téléphone</th>
-										<th width="10%">Latitude</th>
-										<th width="10%">Longitude</th>
+										<th width="25%">Name</th>
+										<th width="40%">﻿Adresse</th>
+										<th width="15%">Telefonnummer</th>
+										<th width="10%">Breitengrad</th>
+										<th width="10%">Längengrad</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -164,13 +164,13 @@
 
 						<div id="description">
 
-							<h1>Plan de site XML</h1>
+							<h1>XML-Sitemap</h1>
 
 															<p>
-									Ce plan de site XML est généré par l’extension SEO pour WordPress <a href="https://rankmath.com/" target="_blank">Rank Math</a>. C’est ce que les moteurs de recherche comme Google utilisent pour explorer et réexplorer les articles, pages, produits, images et archives de votre site.								</p>
+									Diese XML-Sitemap wird generiert von <a href="https://rankmath.com/" target="_blank">Rank Math WordPress SEO Plugin</a>. Es ist das, was Suchmaschinen wie Google verwenden, um Beitragsseiten-Produkte-Bildarchive auf deiner Website zu durchsuchen und neu zu durchsuchen.								</p>
 							
 							<p>
-								En savoir plus sur les <a href="http://sitemaps.org/" target="_blank"> plans de site XML</a>.							</p>
+								Mehr über <a href="http://sitemaps.org/" target="_blank">XML Sitemaps</a> erfahren.							</p>
 
 						</div>
 
@@ -178,14 +178,14 @@
 							<xsl:if test="count(sitemap:sitemapindex/sitemap:sitemap) &gt; 0">
 
 								<p>
-									Ce fichier XML d’index de plans de site contient <strong><xsl:value-of select="count(sitemap:sitemapindex/sitemap:sitemap)"/> plans de site</strong>.								</p>
+									Diese Indexdatei der XML-Sitemap enthält <strong><xsl:value-of select="count(sitemap:sitemapindex/sitemap:sitemap)"/></strong> Sitemaps.								</p>
 
 								<table id="sitemap" cellpadding="3">
 
 									<thead>
 										<tr>
-											<th width="75%">Plan de site</th>
-											<th width="25%">Dernière modification</th>
+											<th width="75%">Sitemap</th>
+											<th width="25%">Zuletzt geändert</th>
 										</tr>
 									</thead>
 
@@ -210,17 +210,17 @@
 							</xsl:if>
 							<xsl:if test="count(sitemap:sitemapindex/sitemap:sitemap) &lt; 1">
 								<p>
-									Ce plan de site XML contient <strong><xsl:value-of select="count(sitemap:urlset/sitemap:url)"/></strong> URL.								</p>
+									Diese XML-Sitemap enthält <strong><xsl:value-of select="count(sitemap:urlset/sitemap:url)"/></strong> URLs.								</p>
 
 								<p class="expl">
-									<a href="/sitemap_index.xml">&#8592; Index du plan de site</a>								</p>
+									<a href="/sitemap_index.xml">&#8592; Sitemap Index</a>								</p>
 
 								<table id="sitemap" cellpadding="3">
 
 									<thead>
 										<tr>
 											<th width="75%">URL</th>
-											<th width="5%">Images</th>											<th title="Last Modification Time" width="20%">Dernier Mod.</th>
+											<th width="5%">Bilder</th>											<th title="Last Modification Time" width="20%">Zuletzt geändert.</th>
 										</tr>
 									</thead>
 
